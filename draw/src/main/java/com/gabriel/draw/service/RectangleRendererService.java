@@ -21,11 +21,11 @@ public class RectangleRendererService implements RendererService {
         int width = Math.abs(end.x - start.x);
         int height = Math.abs(end.y - start.y);
 
+        g.setColor(rectangle.getColor());
+
         if (xor) {
-            g.setColor(rectangle.getColor());
             g.setXORMode(Color.WHITE);
         } else {
-            g.setColor(rectangle.getColor());
             g.setPaintMode();
         }
 

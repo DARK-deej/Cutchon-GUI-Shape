@@ -21,11 +21,11 @@ public class EllipseRendererService implements RendererService {
         int width = Math.abs(end.x - start.x);
         int height = Math.abs(end.y - start.y);
 
+        g.setColor(ellipse.getColor());
+
         if (xor) {
-            g.setColor(ellipse.getColor());
             g.setXORMode(Color.WHITE);
         } else {
-            g.setColor(ellipse.getColor());
             g.setPaintMode();
         }
 
